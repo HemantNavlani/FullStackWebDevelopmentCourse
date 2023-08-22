@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Java Script Quiz App</h1>
+    <div id="quiz"></div>
+    <button id="submit">Submit</button>
+    <div id="results"></div>
+
+
+    <script>
+        const quizContainer =  document.getElementById('quiz');
+        const submitButton  = document.getElementById('submit');
+        const resultsContainer = document.getElementById('results');
+
+
+        const quizQuestions = [
+            {
+                question: "Who is the best web developer in the world",
+                options: {
+                    a:"Hemant Navlani",
+                    b:"Surely Hemant Navlani",
+                    c: "No Doubt Hemant Navlani",
+                    d: "All of the above"
+                },
+                correct: "d"
+            },
+
+            {
+                question: "Who is the prime minister of India",
+                options: {
+                    a:"Hemant Navlani",
+                    b:"Narendra Modi",
+                    c: "Rahul Gandhi",
+                    d: "Manmohan Singh"
+                },
+                correct: "b"
+            },
+
+            {
+                question: "Which is the cleanest city in India?",
+                options: {
+                    a:"Aligarh",
+                    b:"Delhi",
+                    c: "Indore",
+                    d: "Surat"
+                },
+                correct: "c"
+            }
+        ];
+
+        function buildQuiz(){
+            const output = []
+            
+            quizQuestions.forEach((currentQuestion,questionNumber)=> {
+                const choices=[]
+                for (letter in currentQuestion.options){
+                    choices.push(
+                        `<label> 
+                            <input type="radio" name="question${questionNumber}" value="${letter}">${letter}:${currentQuestion.options[letter]}</label>`
+                    )
+                }
+                console.log(choices)
+                output.push(
+                    `<div class="question">${currentQuestion.question}</div>
+                    <div class="answers"> ${choices.join('')}</div>`
+                )
+
+            })
+            console.log(output);
+            quizContainer.innerHTML=output.join('<br>');
+        }
+
+        function showResults(){
+
+            const answerContainers = quizContainer.querySelectorAll('.answers');
+            let numCorrect = 0;
+            quizQuestions.forEach((currentQuestion,questionNumber)=>{
+                //find selected answer
+                const answerContainer= answerContainers[questionNumber];
+                const selected = `input[name=question${questionNumber}]:checked`;
+                const userAns = (answerContainer.querySelector(selected) || {}).value
+
+
+                
+                if (userAns===currentQuestion.correct){
+                    numCorrect++;
+                    answerContainers[questionNumber].style.color='green'
+                }
+                else{
+                    answerContainers[questionNumber].style.color='red'
+                }
+                resultsContainer.innerHTML=`${numCorrect} out of ${quizQuestions.length}`
+            })
+        }
+        buildQuiz();
+        submitButton.addEventListener('click',showResults);
+    </script>
+</body>
+</html>

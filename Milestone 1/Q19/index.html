@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q19</title>
+</head>
+<body>
+    <form action="">
+        <input id="email" type="text" name="" id="" placeholder="Enter Email">
+        <input type="password" id="password" placeholder="Enter password" minlength="8">
+        <button type="submit" id="btn" onclick="validator(event)">Submit</button>
+    </form>
+    <p id="msg"></p>
+
+    
+    <script>
+    
+        function validator(event){
+        event.preventDefault();
+        
+        const email = document.getElementById("email");
+        const password = document.getElementById("password");
+        const message = document.getElementById("msg");
+
+        
+    if (!email.value.includes("@")) {
+      message.textContent = "Invalid email or password!";
+      message.style.color = "red";
+      return;
+    }
+    if (password.value.length < 8) {
+      message.textContent = "Invalid email or password!";
+      message.style.color = "red";
+      return;
+    }
+    message.textContent = "Valid email and password!";
+    message.style.color = "green";    
+}
+    </script>
+</body>
+
+</html>
+

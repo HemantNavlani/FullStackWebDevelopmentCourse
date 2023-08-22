@@ -1,0 +1,48 @@
+body{
+    background-color: red;
+}
+div{
+    font-size: x-large;
+    text-align: center;
+}
+div::after{
+    content: 'Welcome to the demo';
+}
+@media(max-width:400px){
+    
+body{
+    background-color: blue;
+}
+div::after{
+    content: 'Very small';
+}
+}
+
+@media(min-width:400px) and (max-width:768px){
+    
+    body{
+        background-color: green;
+    }
+    div::after{
+        content: 'Mid Size';
+    }
+    }
+    @media(min-width:768px){
+    
+        body{
+            background-color: yellow;
+        }
+        div::after{
+            content: 'Bit bigger';
+        }
+        }
+
+        @media(min-width:900px){
+    
+            body{
+                background-color: orange;
+            }
+            div::after{
+                content: 'Even bigger';
+            }
+            }

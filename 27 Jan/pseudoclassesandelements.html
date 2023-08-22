@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes And Pseudo Elements</title>
+    <style>
+
+        /* Pseudo Classes */
+/* One Way */
+        /* p:hover{
+            background-color: rebeccapurple;
+            color: wheat;
+        } */
+        /* other way */
+
+        .hover:hover{
+            background-color: rebeccapurple;
+            color: wheat;
+        }
+        input:focus{
+            background-color: red;
+            color: wheat;
+        }
+        a:hover{
+            color: aqua;
+        }
+        a:active{
+            color: black;
+        }
+        a:visited{
+            color: blueviolet;
+        }
+        a:first-child{
+            background-color: palegoldenrod;
+        }
+        a:nth-child(even){
+            background-color: red;
+        }
+/* Pseudo Elements */
+        p::first-line{
+            color: aqua;
+        }
+        p::first-letter{
+            background-color: red;
+        }
+        p::selection{
+            background-color: yellow;
+            color: brown;
+        }
+        p::after{
+            content: "Bye Bye";
+            color: burlywood;
+        }
+        p::before{
+            content: "Hi Hi";
+            color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <p class="hover">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab totam alias architecto placeat enim animi iure nesciunt voluptate quo nostrum. Harum esse laudantium iste distinctio perspiciatis, eum nostrum reiciendis ab? sit amet consectetur, adipisicing elit. A, quasi.</p>
+    <input type="text">
+    <a href="https://www.google.com/" target="_blank">Google</a>
+    <nav>
+        <a href="https://www.google.com/" target="_blank">Google</a>
+        <a href="https://www.google.com/" target="_blank">Google</a>
+        <a href="https://www.google.com/" target="_blank">Google</a>
+        <a href="https://www.google.com/" target="_blank">Google</a>
+        </nav>
+</body>
+</html>

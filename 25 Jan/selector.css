@@ -1,0 +1,21 @@
+main p {
+    color: red;
+}
+
+h1 > p{
+    color: blue;
+}
+
+section+p{
+    color: green;
+}
+section~p{
+    color: yellow;
+}
+
+[target="_blank"]{
+    color: orange;
+}
+[alt~="pw"]{
+    color: brown;
+}

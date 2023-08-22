@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q20</title>
+</head>
+<body>
+    <button id="btn" onclick="additem()">Add Item</button>
+    <script>
+        let whatYouWillLearn =["HTML and Semantics","Starting with CSS","Working Template","Mobile responsive webpages","Grid and Flex-box in CSS","Projects using HTML & CSS","Version Control and Git","Getting Started with JavaScript","Advance JavaScript","Working with DOM","Making Projects using HTML, CSS and JavaScript","Understanding Fundamental of Computer Science","Getting Started with Database","Understanding the Database","Starting with NodeJS and Express","Understanding React and its Fundamentals","Understanding Hooks and Routers","Starting and Completing Full Fledge Projects"];
+        let i=0;
+        function additem(){
+            if(i<whatYouWillLearn.length){
+                let item = document.createElement("p");
+                item.textContent=whatYouWillLearn[i];
+                document.body.appendChild(item);
+                i++;
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+<!--
+<body>
+
+    <ul>
+        <li>One</li>
+        <li>Two </li>
+        <li>Three</li>
+    </ul>
+    <script>
+        //Append Child 
+        let title = document.createElement("h1");
+        title.className="pwskills"
+        title.style.fontSize="25px";
+        title.textContent="PW Skills , Ram Ram";
+        console.log(title);
+        document.body.appendChild(title);
+
+        //Remove Child
+        let ul = document.querySelector("ul");
+        console.log(ul);
+        let lists = document.querySelectorAll("li");
+        console.log(lists);
+        for(list of lists){
+            ul.removeChild(list);
+        }
+    </script>
+</body>
+</html>
+-->

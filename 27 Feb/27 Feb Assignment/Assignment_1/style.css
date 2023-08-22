@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+    margin-top: 300px;
+}
+h1{
+    margin-left: 30px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+#reset{
+    margin-left: 30px;
+}

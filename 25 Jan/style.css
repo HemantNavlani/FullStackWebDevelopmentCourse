@@ -1,0 +1,36 @@
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Element Selector */
+h1{
+    color: blueviolet;
+}
+
+/* Class Selector */
+.name{
+    color: brown;
+}
+
+.info{
+    font-size: 45px;
+}
+
+/* Id Selectors */
+#id1{
+    color: violet;
+    font: bold;
+    font-size: 50px;
+}
+/* Selector list  */
+.para,.abc,#id2{
+    background-color: red;
+}
+
+/* Made for priorityofcss.html */
+/* body{
+    background-color:rgb(24, 23, 23);
+    color: rgb(255, 255, 254);
+} */

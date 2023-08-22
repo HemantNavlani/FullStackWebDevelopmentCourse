@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q23</title>
+</head>
+<body>
+    <button id="btn">Click me to change</button>
+
+    <script>
+        let arr =["#ff0000","#0000ff","#008000","#ffff00","#ffa500","#ffc0cb"];
+        const btn = document.getElementById("btn");
+        
+        const colorchange = (arr) => {
+          let idx = Math.floor(Math.random()*6);
+          return arr[idx];
+        }
+        function changeColor(){
+            document.body.style.backgroundColor=colorchange(arr);
+        }
+        btn.addEventListener("click",changeColor);
+    </script>
+</body>
+</html>

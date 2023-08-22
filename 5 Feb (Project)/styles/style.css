@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+
+body{
+    background-image: url("/Screenshot 2023-02-11 at 11.04.32 AM.png");
+    background-size: 100%;
+    background-attachment:fixed;
+}
+nav{
+    display: flex;
+    background-color: black;
+    height: 75px;
+    justify-content: space-between;
+    align-content: center;
+}
+ul{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+}
+ul img{
+    height: 60%;
+    width: 60%;
+    margin-left: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: #B90EC4;
+    cursor: pointer;
+}
+li{
+    
+    list-style: none;
+    margin: 10px;
+    padding: 5px;
+    color: white;
+}
+button{
+    background-color: #B90EC4;
+    color: white;
+    margin: 30px;
+    height: 40px;
+    width: 125px;
+    border: none;
+    border-radius: 5px;
+    align-self: center;
+    font-weight: 600;
+}
+
+button:hover{
+    background-color: white;
+    color: #B90EC4;
+    cursor: pointer;
+}
+main{
+    text-align: center;
+    margin:10%;
+    color: white;
+}
+h1{
+    font-size:80px;
+}
+p{
+    font-size:25px;
+    font-weight: 500;
+}
+main button{
+    margin: 60px;
+    width: 250px;
+    height: 50px;
+    font-size: large;
+}

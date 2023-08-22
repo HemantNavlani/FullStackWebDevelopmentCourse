@@ -1,0 +1,40 @@
+.btn{
+    background-color: #4BB5F9;
+    border: none;
+    border-radius: 5px;
+    margin-left: 35%;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    width:425px;
+    margin-top: 20px;
+}
+
+.btn2{
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    background-color: #FFFFFF;
+    color: #4BB5F9;
+    font-size: medium;
+}
+span{
+    margin-left: 40%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+input{
+    margin-left: 35%;
+    padding: 10px;
+    display: flex;
+    width:400px;
+    margin-top: 20px;
+}
+
+img{
+    margin-top: 10%;
+    margin-left: 40%;
+    height: 100px;
+    width: 300px;
+}

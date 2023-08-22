@@ -1,0 +1,44 @@
+body{
+    background-color: aqua;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 1000;
+}
+div{
+    text-align: center;
+    font-size: 20px;
+}
+@media(max-width:1440px){
+    div::after{
+     content: 'Screen Size : 1440 px';
+    }
+    body{
+        background-color: green;
+    }
+}
+@media(max-width:1024px){
+    div::after{
+     content: 'Screen Size : 1024 px';
+    }
+    body{
+        background-color: brown;
+    }
+}
+@media(max-width:768px){
+    div::after{
+     content: 'Screen Size : 768 px';
+    }
+    body{
+        background-color:blue;
+    }
+}
+@media(max-width:425px){
+    div::after{
+     content: 'Screen Size : 425 px';
+    }
+    body{
+        background-color: maroon;
+    }
+}

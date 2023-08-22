@@ -1,0 +1,18 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        width: 200px;
+        background-color: aqua;
+        color: red;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    

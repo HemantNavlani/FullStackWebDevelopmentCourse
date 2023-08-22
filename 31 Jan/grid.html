@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            /* grid-template-columns: 500px 500px 500px; */
+            /* it tells the no of columns */
+            grid-template-columns: 1fr 1fr 1fr;
+
+            /* this repaeat is same as above */
+            /* grid-template-columns: repeat(3,1fr); */
+
+            /* grid-template-columns: minmax(10px,1fr); */
+
+            /*  it tells the height  */
+            /* 1fr means 1 fractional unit */
+            grid-template-rows: 600px 100px 100px ; 
+            /* gap: 10px;
+            justify-items: end;
+            align-items: center; */
+
+
+
+            /* align is for y axis  */
+            /* justify is for x axis */
+
+   /* see about grid area*/
+
+   /* grid template - used to give row columns and area together */
+
+        }
+        .box{
+            /* height: 100px;
+            width: 100px;
+            margin: 10px; */
+        }
+        .box1{
+            background-color: red;
+
+            /* grid-column-start: 1; */
+            /* grid-column-end: 3; */
+            grid-row-start: 1;
+            grid-row-end: 3;
+            /* border: 2px solid black; */
+            /* align-self works on x-axis */
+            /* align-self: center; */
+
+            /* justify-self is used for y axis */
+            /* justify-self: end; */
+
+        }
+        .box2{
+            background-color:yellow;
+        }
+        .box3{
+            background-color: green;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+</body>
+</html>

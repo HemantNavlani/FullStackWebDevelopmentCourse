@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Albums</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,250px);
+
+        }
+        .box{
+            /* height: 100px;
+            width: 100px; */
+            /* overflow: hidden; */
+        }
+        .box1{
+            display: grid;
+            background: red;
+            /* grid-column-start: 1; */
+            /* grid-column-end: 3; */
+            /* align-content: end; */
+        }
+        .box2{
+            background: blue;
+        }
+        .box3{
+            background: green;
+        }
+        .box4{
+            background: yellow;
+            /* grid-row-start: 2; */
+            /* grid-row-end: 4; */
+        }
+        .box5{
+            background: orange;
+        }
+        .box6{
+            background: purple;
+        }
+        .box7{
+            background: black;
+        }
+        .box8{
+            background: brown;
+        }
+        .box9{
+            background: aqua;
+        }
+
+        .box10{
+            background-color: goldenrod;
+            height: 100px;
+            width: 100px;
+            /* justify-self: start; */
+            align-self: end;
+            justify-self: center;
+            /* align-content: end; */
+            /* align-items: end; */
+            /* justify-items: end; */
+        }
+         .box11{
+            background-color: rebeccapurple;
+            height: 100px;
+            width: 100px;
+            align-self: end;
+            justify-self: start;
+        } 
+         .box12{
+            background-color: violet;
+            height: 100px;
+            width: 100px;
+            justify-self: end; 
+            align-self: start;
+            
+        } 
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">
+            <div class="box box1 box10"></div>
+            <div class="box box1 box11"></div>
+            <div class="box box1 box12"></div>
+        </div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+        <div class="box box9"></div>
+    </div>
+</body>
+</html>

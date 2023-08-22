@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q18</title>
+</head>
+<body>
+    <h1 id="h1">The most affordable learning platform</h1>
+        <button onclick="change()">Click to Change</button>
+        
+        <script>
+            function change(){
+                if (document.getElementById("h1").innerText=="The most affordable learning platform")
+                document.getElementById("h1").innerText="PW Skills";
+                
+
+                else if (document.getElementById("h1").innerText=="PW Skills")
+                 document.getElementById("h1").innerText="The most affordable learning platform";
+            }
+        </script>
+</body>
+</html>
+
